@@ -25,16 +25,19 @@ module.exports = function(grunt) {
             files: ['test/**/*_test.js']
         },
         jshint: {
-            files: ['gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
             options: {
+                undef: true,
+                unused: true,
                 // options here to override JSHint defaults
                 globals: {
                     jQuery: true,
                     console: true,
                     module: true,
-                    document: true
+                    document: true,
+                    node: true
                 }
-            }
+            },
+            files: ['gruntfile.js', 'src/**/*.js', 'test/**/*.js']
         },
         watch: {
             files: ['<%= jshint.files %>'],

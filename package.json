@@ -16,9 +16,13 @@
     "type": "git",
     "url": "https://github.com/flier/node-iphoto.git"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bplist-parser": ">= 0.0.4",
+    "underscore": ">= 1.4.4",
+    "underscore.string": ">= 2.2.0"
+  },
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": ">= 0.4.1",
     "grunt-contrib-uglify": ">= 0.2.0",
     "grunt-contrib-jshint": ">= 0.4.3",
     "grunt-contrib-nodeunit": ">= 0.1.2",
